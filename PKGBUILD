@@ -1,19 +1,20 @@
 # Maintainer: Chase Patterson <chapatt at gmail dot com>
 pkgname=go-agent
-pkgver=18.8.0
+pkgver=18.12.0
+_pkgver=${pkgver}-8222
 pkgrel=1
 pkgdesc='GoCD (continuous delivery) agent'
 arch=('any')
 url='http://gocd.org'
 license=('Apache')
-source=("go-agent-18.8.0-7433.zip::https://download.gocd.org/binaries/18.8.0-7433/generic/go-agent-18.8.0-7433.zip"
+source=("https://download.gocd.org/binaries/${_pkgver}/generic/${pkgname}-${_pkgver}.zip"
 	'go-agent.service'
 	'go-agent.sysusers'
 	'go-agent.tmpfiles')
-sha1sums=('c841c60d86370e6bcfd1d27c093638c5c0e85937'
-	  '412ff92811025f962250ff956258f562b364019a'
-	  '8732e0add330daa1fb534ae05249bd2699c750a0'
-	  '109387b7901e7861bbc4c2f91730cc767bfb7ee3')
+sha1sums=('b9b3c59597a7ede5a4057fcc90ffc41ae199f0d2'
+          '412ff92811025f962250ff956258f562b364019a'
+          '8732e0add330daa1fb534ae05249bd2699c750a0'
+          '109387b7901e7861bbc4c2f91730cc767bfb7ee3')
 depends=('java-runtime>=8')
 
 package()

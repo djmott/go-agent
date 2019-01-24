@@ -1,0 +1,4 @@
+go-agent*.zip
+/pkg/*
+/src/*
+go-agent*.pkg.tar.xz
